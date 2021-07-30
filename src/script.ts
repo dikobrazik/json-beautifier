@@ -4,12 +4,14 @@
 //     s.src = "https://github.com/dikobrazik/json-beautifier/json-beautifier.js";
 //     document.body.appendChild(s);
 // })()
-const createJSONDOM = require('./create-json-dom');
+import createJSONDOM from './create-json-dom';
 
 const jsonContainer = document.querySelector('body > pre');
+
+if (!jsonContainer || !jsonContainer.textContent) throw Error('');
+
 const json = JSON.parse(jsonContainer.textContent);
 jsonContainer.remove();
-
 const beautyJSONContainer = document.createElement('div');
 document.body.appendChild(beautyJSONContainer);
 

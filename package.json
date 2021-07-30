@@ -1,0 +1,24 @@
+{
+  "name": "json-beautifier",
+  "version": "1.0.0",
+  "description": "Script for beautifying JSON in browser page",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dikobrazik/json-beautifier.git"
+  },
+  "author": "dikobrazik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dikobrazik/json-beautifier/issues"
+  },
+  "homepage": "https://github.com/dikobrazik/json-beautifier#readme",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "typescript": "^4.3.5"
+  }
+}

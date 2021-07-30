@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "module": "UMD",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    // "outFile": "./build/tsc.js",
+    "outDir": "./build",
+    "sourceMap": true,
+    "lib": [
+        "ES2017",
+        "DOM"
+    ]
+  },
+  "include": ["src/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
